@@ -1,0 +1,35 @@
+public class Main
+{
+    
+   int sum=1;
+  
+	public static void main(String[] args) {
+		Main obj = new Main();
+	
+		int result=	obj.fibo1(5);
+		System.out.println("Factorial of 5 is"+ " "+result);
+	}
+	
+int    fibo1(int num){
+    
+  if(num==1){
+      return 1;
+     
+  }
+  else{
+       sum=sum*num;
+  fibo1(num-1);
+  return sum;
+   
+  }
+ 
+  
+   }
+     
+	
+}
+
+
+Output:▶
+
+Factorial of 5 is 120
